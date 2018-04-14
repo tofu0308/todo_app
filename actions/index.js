@@ -2,7 +2,7 @@
 let nextTodoId = 0;
 
 //add todo
-export const addTodo = (rext) => {
+export const addTodo = (text) => {
 	return {
 		type: 'ADD_Todo',
 		id: nextTodoId ++,

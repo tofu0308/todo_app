@@ -41,11 +41,11 @@ var _index = require('./actions/index.js');
 
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
-/*
-let store = createStore(function(){
+var store = (0, _redux.createStore)(function () {
 	return 'Hello Redux';
 });
 
+/*
 const contents = document.querySelector('contents');
 contents.innerHTML = store.getState().toString();
 */
