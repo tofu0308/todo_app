@@ -27,10 +27,10 @@ const todo = (state, action) => {
 const todos = (state = [], action) => {
 	switch (action.type) {
 		case 'APP_TODO':
-			return {
+			return [
 				...state,
 				todo(undefined, action)
-			};
+			];
 		case 'TOGGLE_TODO':
 			return state.map(t =>
 				todo(t, action)
