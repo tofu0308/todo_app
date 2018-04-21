@@ -14,8 +14,8 @@ var input = addTodoElem.getElementsByTagName('input')[0];
 var button = addTodoElem.getElementsByTagName('button')[0];
 
 button.addEventListener('click', () => {
-	var todoText = input.value;
-	store.dispatch(addTodo(todoText));
+ var todoText = input.value;
+ store.dispatch(addTodo(todoText));
 });
 
 //done todo
@@ -24,9 +24,9 @@ var elements = todoList.getElementsByTagName('li');
 var listArray = [...elements];
 
 listArray.forEach((v, index) => {
-	v.addEventListener(click, e => {
-		store.dispatch(toggleTodo(index));
-	})
+ v.addEventListener(click, e => {
+  store.dispatch(toggleTodo(index));
+ })
 });
 
 //filtering todo
@@ -35,8 +35,9 @@ var childs = links.childNodes;
 var childList = [...childs];
 
 childList.filter(v => v.nodeName != '#text').forEach(v => {
-	v.addEventListener('click', e => {
-		var filterText = v.innerHTML;
-		store.dispatch(setVisibiltyFilter(filterText));
-	});
+ v.addEventListener('click', e => {
+  var filterText = v.innerHTML;
+  store.dispatch(setVisibiltyFilter(filterText));
+ });
 });
+sample
