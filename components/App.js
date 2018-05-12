@@ -1,7 +1,7 @@
 import React from 'react';
-import Footer from '../Footer';
+import Footer from './Footer';
 import AddTodo from '../containers/AddTodo';
-import Visible from '../containers/VisibleTodoList';
+import VisibleTodoList from '../containers/VisibleTodoList';
 
 //AppはTODO追加、TODO一覧、フィルタリングメニュー（Footer）から成る
 class App extends React.Component {
@@ -9,7 +9,7 @@ class App extends React.Component {
 		return(
 			<div>
         <AddTodo />
-        <VisibleTodoList />
+          <VisibleTodoList />
         <Footer />
 			</div>
 		);
